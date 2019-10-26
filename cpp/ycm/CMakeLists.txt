@@ -43,18 +43,18 @@ if ( USE_CLANG_COMPLETER AND
      NOT USE_SYSTEM_LIBCLANG AND
      NOT PATH_TO_LLVM_ROOT AND
      NOT EXTERNAL_LIBCLANG_PATH )
-  message( "Downloading Clang 3.5" )
+  message( "Downloading Clang 9.0" )
 
-  set( CLANG_URL "http://llvm.org/releases/3.5.0" )
+  set( CLANG_URL "http://llvm.org/releases/9.0.0/" )
 
   if ( APPLE )
-    set( CLANG_DIRNAME "clang+llvm-3.5.0-macosx-apple-darwin" )
-    set( CLANG_MD5 "e580c8b8c64ca5442ac15a4343447500" )
+    set( CLANG_DIRNAME "clang+llvm-9.0.0-x86_64-darwin-apple" )
+    set( CLANG_MD5 "09dc2a71b4fca7a449aa98a56d28bdd7" )
     set( CLANG_FILENAME "${CLANG_DIRNAME}.tar.xz" )
   else()
     if ( 64_BIT_PLATFORM )
-      set( CLANG_DIRNAME "clang+llvm-3.5.0-x86_64-linux-gnu-ubuntu-14.04" )
-      set( CLANG_MD5 "904e96e6f51e57b58de546a7324910c3" )
+      set( CLANG_DIRNAME "clang+llvm-9.0.0-x86_64-linux-gnu-ubuntu-16.04" )
+      set( CLANG_MD5 "b3c5618fb3a5d268c371539e9f6a4b1f" )
       set( CLANG_FILENAME "${CLANG_DIRNAME}.tar.xz" )
     else()
       # Clang 3.3 is the last version with pre-built x86 binaries upstream.

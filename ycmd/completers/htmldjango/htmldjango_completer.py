@@ -34,13 +34,10 @@ except ImportError as e:
     raise ImportError(
         "Error importing django_completeme. Make sure the django_completeme "
         "submodule has been checked out In the YouCompleteMe folder, "
-        'run "git submodule update --init --recursive"'
-    )
-
+        'run "git submodule update --init --recursive"')
 
 # TODO really can be anything. normally set ft=htmldjango handles this
 HTMLDJANGO_FILETYPES = set(["htmldjango"])
-
 
 logging.debug("htmldjango:parser_loaded")
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# Copyright (C) 2015 Michael Brown 
+# Copyright (C) 2015 Michael Brown
 #
 # This file is part of YouCompleteMe.
 #
@@ -20,7 +20,8 @@
 import logging
 logging.debug("htmldjango:init")
 from ycmd.completers.completer import Completer
-import sys, os
+import sys
+import os
 
 sys.path.append(os.getcwd())
 

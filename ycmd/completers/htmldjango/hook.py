@@ -26,7 +26,7 @@ from ycmd.completers.htmldjango.htmldjango_completer import HtmlDjangoCompleter
 
 
 def GetCompleter( user_options ):
-  # if not ShouldEnableGoCompleter( user_options ):
-  #   return None
+    # if not ShouldEnableGoCompleter( user_options ):
+    #   return None
 
-  return HtmlDjangoCompleter( user_options )
+    return HtmlDjangoCompleter( user_options )

@@ -19,14 +19,15 @@ from __future__ import unicode_literals
 from __future__ import print_function
 from __future__ import division
 from __future__ import absolute_import
+
 # Not installing aliases from python-future; it's unreliable and slow.
 from builtins import *  # noqa
 
 from ycmd.completers.htmldjango.htmldjango_completer import HtmlDjangoCompleter
 
 
-def GetCompleter( user_options ):
+def GetCompleter(user_options):
     # if not ShouldEnableGoCompleter( user_options ):
     #   return None
 
-    return HtmlDjangoCompleter( user_options )
+    return HtmlDjangoCompleter(user_options)

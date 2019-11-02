@@ -22,6 +22,9 @@
 [submodule "third_party/python-future"]
 	path = third_party/python-future
 	url = https://github.com/PythonCharmers/python-future
+[submodule "third_party/django_completeme"]
+	path = third_party/django_completeme
+	url = https://github.com/mjbrownie/django_completeme
 [submodule "third_party/cregex"]
 	path = third_party/cregex
 	url = https://github.com/ycm-core/regex.git
